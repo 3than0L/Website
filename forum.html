@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Forum - JCI Drones</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/forum.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container nav-container">
+                <div class="logo">
+                    <span class="logo-text">JCI</span>
+                    <span class="logo-subtitle">DRONES</span>
+                </div>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="forum.html" class="active">Forum</a></li>
+                    <li><a href="store.html">Store</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="page-title">Community Forum</h1>
+                <p class="page-subtitle">Connect with fellow drone enthusiasts and JCI representatives</p>
+            </div>
+        </section>
+
+        <section class="forum-section">
+            <div class="container">
+                <div class="forum-controls">
+                    <div class="categories">
+                        <h3>Hot Categories</h3>
+                        <div class="category-pills">
+                            <button class="category-pill active" data-category="all">All Posts</button>
+                            <button class="category-pill" data-category="tutorials">Tutorials</button>
+                            <button class="category-pill" data-category="showcase">Showcase</button>
+                            <button class="category-pill" data-category="support">Support</button>
+                            <button class="category-pill" data-category="news">News</button>
+                        </div>
+                    </div>
+                    <div class="search-box">
+                        <input type="text" id="searchInput" placeholder="Search posts...">
+                    </div>
+                </div>
+
+                <div class="forum-posts" id="forumPosts">
+                    <div class="forum-post" data-category="news">
+                        <div class="post-header">
+                            <div class="user-info">
+                                <div class="user-avatar" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">JCI</div>
+                                <div class="user-details">
+                                    <span class="username">JCI Official <span class="verified">✓</span></span>
+                                    <span class="post-time">2 hours ago</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <h3 class="post-title">Introducing SkyVision X7 - The Future is Here</h3>
+                            <p class="post-description">We're thrilled to announce the launch of our flagship drone, the SkyVision X7. Featuring groundbreaking 8K HDR camera technology, advanced AI obstacle avoidance, and an unprecedented 45-minute flight time. This is the drone that professionals have been waiting for.</p>
+                        </div>
+                        <div class="post-stats">
+                            <span class="stat-item"><span class="icon">👁</span> 15,234 views</span>
+                            <span class="stat-item"><span class="icon">❤</span> 892 likes</span>
+                            <span class="stat-item"><span class="icon">🔗</span> 156 shares</span>
+                        </div>
+                    </div>
+
+                    <div class="forum-post" data-category="tutorials">
+                        <div class="post-header">
+                            <div class="user-info">
+                                <div class="user-avatar" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">SK</div>
+                                <div class="user-details">
+                                    <span class="username">SkyKing_Pro <span class="verified">✓</span></span>
+                                    <span class="post-time">5 hours ago</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <h3 class="post-title">Mastering Low-Light Aerial Photography</h3>
+                            <p class="post-description">After months of testing, I've compiled my ultimate guide to capturing stunning low-light aerial shots. Learn about optimal camera settings, flight patterns, and post-processing techniques that will elevate your night photography game.</p>
+                        </div>
+                        <div class="post-stats">
+                            <span class="stat-item"><span class="icon">👁</span> 8,421 views</span>
+                            <span class="stat-item"><span class="icon">❤</span> 567 likes</span>
+                            <span class="stat-item"><span class="icon">🔗</span> 89 shares</span>
+                        </div>
+                    </div>
+
+                    <div class="forum-post" data-category="showcase">
+                        <div class="post-header">
+                            <div class="user-info">
+                                <div class="user-avatar" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">AV</div>
+                                <div class="user-details">
+                                    <span class="username">AerialVisions <span class="verified">✓</span></span>
+                                    <span class="post-time">1 day ago</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <h3 class="post-title">My Latest Documentary Shot Entirely on CloudSeeker 5</h3>
+                            <p class="post-description">Just wrapped up a wildlife documentary in the Amazon rainforest using only the CloudSeeker 5. The portability and image quality are phenomenal. Sharing behind-the-scenes footage and final results. The gimbal stabilization saved countless shots!</p>
+                        </div>
+                        <div class="post-stats">
+                            <span class="stat-item"><span class="icon">👁</span> 12,890 views</span>
+                            <span class="stat-item"><span class="icon">❤</span> 1,245 likes</span>
+                            <span class="stat-item"><span class="icon">🔗</span> 234 shares</span>
+                        </div>
+                    </div>
+
+                    <div class="forum-post" data-category="support">
+                        <div class="post-header">
+                            <div class="user-info">
+                                <div class="user-avatar" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">DF</div>
+                                <div class="user-details">
+                                    <span class="username">DroneFlyer_88 <span class="verified">✓</span></span>
+                                    <span class="post-time">2 days ago</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <h3 class="post-title">AeroMax Pro Firmware Update Tips</h3>
+                            <p class="post-description">For anyone updating to the latest firmware on AeroMax Pro, make sure to calibrate your compass afterwards. Also noticed improved battery performance - getting an extra 3 minutes of flight time now. Highly recommend updating!</p>
+                        </div>
+                        <div class="post-stats">
+                            <span class="stat-item"><span class="icon">👁</span> 6,543 views</span>
+                            <span class="stat-item"><span class="icon">❤</span> 378 likes</span>
+                            <span class="stat-item"><span class="icon">🔗</span> 45 shares</span>
+                        </div>
+                    </div>
+
+                    <div class="forum-post" data-category="tutorials">
+                        <div class="post-header">
+                            <div class="user-info">
+                                <div class="user-avatar" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);">CM</div>
+                                <div class="user-details">
+                                    <span class="username">CineMaster_Films <span class="verified">✓</span></span>
+                                    <span class="post-time">3 days ago</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <h3 class="post-title">Creating Cinematic Drone Movements</h3>
+                            <p class="post-description">A comprehensive guide to achieving smooth, professional drone movements. Covering reveal shots, tracking shots, orbit techniques, and the importance of flight speed control. Includes examples from my commercial projects.</p>
+                        </div>
+                        <div class="post-stats">
+                            <span class="stat-item"><span class="icon">👁</span> 9,876 views</span>
+                            <span class="stat-item"><span class="icon">❤</span> 654 likes</span>
+                            <span class="stat-item"><span class="icon">🔗</span> 123 shares</span>
+                        </div>
+                    </div>
+
+                    <div class="forum-post" data-category="showcase">
+                        <div class="post-header">
+                            <div class="user-info">
+                                <div class="user-avatar" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">NP</div>
+                                <div class="user-details">
+                                    <span class="username">NaturePilot <span class="verified">✓</span></span>
+                                    <span class="post-time">4 days ago</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <h3 class="post-title">Capturing the Northern Lights from Above</h3>
+                            <p class="post-description">Spent a week in Iceland capturing aurora borealis with the SkyVision X7. The low-light capabilities are mind-blowing. Shot at 6400 ISO with minimal noise. Sharing my favorite shots and camera settings for anyone planning similar trips.</p>
+                        </div>
+                        <div class="post-stats">
+                            <span class="stat-item"><span class="icon">👁</span> 18,234 views</span>
+                            <span class="stat-item"><span class="icon">❤</span> 2,156 likes</span>
+                            <span class="stat-item"><span class="icon">🔗</span> 445 shares</span>
+                        </div>
+                    </div>
+
+                    <div class="forum-post" data-category="news">
+                        <div class="post-header">
+                            <div class="user-info">
+                                <div class="user-avatar" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">JCI</div>
+                                <div class="user-details">
+                                    <span class="username">JCI Official <span class="verified">✓</span></span>
+                                    <span class="post-time">5 days ago</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <h3 class="post-title">JCI Community Meetup 2025 Announcement</h3>
+                            <p class="post-description">Join us for our annual drone enthusiast gathering! Network with professionals, attend workshops, and get hands-on with upcoming products. Early bird registration now open. Special discounts for verified community members.</p>
+                        </div>
+                        <div class="post-stats">
+                            <span class="stat-item"><span class="icon">👁</span> 11,567 views</span>
+                            <span class="stat-item"><span class="icon">❤</span> 934 likes</span>
+                            <span class="stat-item"><span class="icon">🔗</span> 287 shares</span>
+                        </div>
+                    </div>
+
+                    <div class="forum-post" data-category="support">
+                        <div class="post-header">
+                            <div class="user-info">
+                                <div class="user-avatar" style="background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);">TP</div>
+                                <div class="user-details">
+                                    <span class="username">TechPilot_23 <span class="verified">✓</span></span>
+                                    <span class="post-time">1 week ago</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <h3 class="post-title">Best Accessories for MiniFlyer SE</h3>
+                            <p class="post-description">After extensive testing, here are my must-have accessories for the MiniFlyer SE: ND filter set, landing pad, extra batteries, and a quality carrying case. Each accessory reviewed with pros and cons based on real-world usage.</p>
+                        </div>
+                        <div class="post-stats">
+                            <span class="stat-item"><span class="icon">👁</span> 7,234 views</span>
+                            <span class="stat-item"><span class="icon">❤</span> 445 likes</span>
+                            <span class="stat-item"><span class="icon">🔗</span> 67 shares</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-section">
+                <h4>JCI Drones</h4>
+                <p>Revolutionizing aerial imaging with cutting-edge technology and innovation.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="forum.html">Community</a></li>
+                    <li><a href="store.html">Store Locator</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 JCI Drones. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/forum.js"></script>
+</body>
+</html>

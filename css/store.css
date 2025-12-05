@@ -1,0 +1,331 @@
+.section-description {
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+}
+
+.app-section {
+    padding: 4rem 0;
+    background: var(--card-bg);
+}
+
+.app-download {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.app-preview {
+    display: flex;
+    justify-content: center;
+}
+
+.phone-mockup {
+    width: 280px;
+    height: 560px;
+    background: linear-gradient(135deg, #1a1f3a 0%, #2a2f4a 100%);
+    border-radius: 40px;
+    padding: 15px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.phone-mockup::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 25px;
+    background: #0a0e27;
+    border-radius: 0 0 20px 20px;
+}
+
+.phone-screen {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #0066ff 0%, #00d4ff 100%);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.app-interface {
+    text-align: center;
+    color: white;
+}
+
+.app-interface h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.app-info h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.app-features {
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.app-features li {
+    padding: 0.8rem 0;
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.download-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.store-button {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+    background: var(--dark-bg);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.store-button:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+.store-icon {
+    font-size: 2rem;
+}
+
+.store-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.store-label {
+    font-size: 0.7rem;
+    color: var(--text-secondary);
+}
+
+.store-name {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--text-primary);
+}
+
+.ecommerce-section {
+    padding: 4rem 0;
+}
+
+.ecommerce-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.ecommerce-card {
+    background: var(--card-bg);
+    padding: 2.5rem;
+    border-radius: 20px;
+    text-align: center;
+    transition: var(--transition);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.ecommerce-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary-color);
+}
+
+.ecommerce-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-size: 2.5rem;
+}
+
+.ecommerce-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.ecommerce-card p {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+}
+
+.visit-button {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background: var(--accent-gradient);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.visit-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 102, 255, 0.4);
+}
+
+.retail-section {
+    padding: 4rem 0;
+    background: var(--card-bg);
+}
+
+.retail-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.retail-item {
+    background: var(--dark-bg);
+    padding: 2rem;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    transition: var(--transition);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.retail-item:hover {
+    border-color: var(--primary-color);
+    transform: translateX(10px);
+}
+
+.retail-icon {
+    font-size: 3rem;
+    min-width: 60px;
+}
+
+.retail-info h4 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.retail-info p {
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+}
+
+.retail-locations {
+    display: inline-block;
+    background: rgba(0, 102, 255, 0.1);
+    color: var(--primary-color);
+    padding: 0.3rem 1rem;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.support-section {
+    padding: 4rem 0;
+}
+
+.support-card {
+    background: var(--card-bg);
+    padding: 4rem;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.support-card h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.support-card p {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Tablet Responsive */
+@media screen and (max-width: 768px) {
+    .app-download {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    
+    .ecommerce-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .retail-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .support-card {
+        padding: 3rem 2rem;
+    }
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 600px) {
+    .phone-mockup {
+        width: 240px;
+        height: 480px;
+    }
+    
+    .app-interface h3 {
+        font-size: 1.5rem;
+    }
+    
+    .app-info h3 {
+        font-size: 1.5rem;
+    }
+    
+    .download-buttons {
+        flex-direction: column;
+    }
+    
+    .store-button {
+        width: 100%;
+    }
+    
+    .ecommerce-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .retail-item {
+        padding: 1.5rem;
+    }
+    
+    .support-card {
+        padding: 2rem 1.5rem;
+    }
+    
+    .support-card h2 {
+        font-size: 1.5rem;
+    }
+}

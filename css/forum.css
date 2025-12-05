@@ -1,0 +1,226 @@
+.forum-section {
+    padding: 4rem 0;
+}
+
+.forum-controls {
+    margin-bottom: 3rem;
+}
+
+.categories {
+    margin-bottom: 2rem;
+}
+
+.categories h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.category-pills {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.category-pill {
+    padding: 0.6rem 1.5rem;
+    background: var(--card-bg);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: var(--transition);
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.category-pill:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.category-pill.active {
+    background: var(--accent-gradient);
+    border-color: transparent;
+    color: white;
+}
+
+.search-box {
+    margin-top: 1.5rem;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    background: var(--card-bg);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    color: var(--text-primary);
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.search-box input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.search-box input::placeholder {
+    color: var(--text-secondary);
+}
+
+.forum-posts {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.forum-post {
+    background: var(--card-bg);
+    border-radius: 15px;
+    padding: 2rem;
+    transition: var(--transition);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.forum-post:hover {
+    border-color: var(--primary-color);
+    transform: translateX(5px);
+}
+
+.post-header {
+    margin-bottom: 1.5rem;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.user-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.user-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.username {
+    font-weight: 600;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.verified {
+    color: var(--primary-color);
+    font-size: 1rem;
+}
+
+.post-time {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.post-content {
+    margin-bottom: 1.5rem;
+}
+
+.post-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+    color: var(--text-primary);
+}
+
+.post-description {
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+.post-stats {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.stat-item {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.stat-item .icon {
+    font-size: 1.1rem;
+}
+
+/* Tablet Responsive */
+@media screen and (max-width: 768px) {
+    .category-pills {
+        gap: 0.7rem;
+    }
+    
+    .category-pill {
+        padding: 0.5rem 1.2rem;
+        font-size: 0.9rem;
+    }
+    
+    .forum-post {
+        padding: 1.5rem;
+    }
+    
+    .post-title {
+        font-size: 1.3rem;
+    }
+    
+    .post-stats {
+        gap: 1.5rem;
+    }
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 600px) {
+    .category-pills {
+        flex-direction: column;
+    }
+    
+    .category-pill {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .forum-post {
+        padding: 1.2rem;
+    }
+    
+    .user-avatar {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+    
+    .post-title {
+        font-size: 1.2rem;
+    }
+    
+    .post-description {
+        font-size: 0.95rem;
+    }
+    
+    .post-stats {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+}

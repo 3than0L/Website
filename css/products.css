@@ -1,0 +1,220 @@
+.page-hero {
+    padding: 8rem 0 4rem;
+    background: linear-gradient(135deg, var(--dark-bg) 0%, var(--card-bg) 100%);
+    text-align: center;
+    margin-top: 60px;
+}
+
+.page-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.page-subtitle {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+}
+
+.drone-types {
+    padding: 4rem 0;
+}
+
+.types-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+.type-card {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: var(--transition);
+    border: 2px solid transparent;
+}
+
+.type-card:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-5px);
+}
+
+.type-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.type-card p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.top-drones {
+    padding: 4rem 0;
+    background: var(--card-bg);
+}
+
+.drones-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.drone-card {
+    background: var(--dark-bg);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: var(--transition);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.drone-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 102, 255, 0.3);
+    border-color: var(--primary-color);
+}
+
+.drone-image {
+    position: relative;
+    padding-top: 60%;
+    overflow: hidden;
+}
+
+.placeholder-drone {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.drone-label {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: var(--accent-gradient);
+    color: white;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.drone-content {
+    padding: 2rem;
+}
+
+.drone-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.drone-desc {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.drone-specs {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.drone-specs span {
+    background: rgba(0, 102, 255, 0.1);
+    color: var(--primary-color);
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.buy-button {
+    width: 100%;
+    padding: 1rem;
+    background: var(--accent-gradient);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.buy-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 102, 255, 0.4);
+}
+
+.comparison-section {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.comparison-text {
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+}
+
+/* Tablet Responsive */
+@media screen and (max-width: 768px) {
+    .page-title {
+        font-size: 2.5rem;
+    }
+    
+    .types-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .drones-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 600px) {
+    .page-hero {
+        padding: 6rem 0 3rem;
+    }
+    
+    .page-title {
+        font-size: 2rem;
+    }
+    
+    .page-subtitle {
+        font-size: 1rem;
+    }
+    
+    .types-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .drones-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .drone-content {
+        padding: 1.5rem;
+    }
+}
